@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My To Do</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a routerLink="" routerLinkActive="active">Home</a>
+      </li>
+      <li>
+        <a routerLink="/inbox" routerLinkActive="active">Inbox</a>
+      </li>
+      <li>
+        <a routerLink="/history" routerLinkActive="active">History</a>
+      </li>
+      <li>
+        <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+            More
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li>
+              <a routerLink="/policy" routerLinkActive="active">Policie</a>
+            </li>
+            <li>
+              <a routerLink="/language" routerLinkActive="active">Language</a>
+            </li>
+            <li>
+              <a routerLink="/settings" routerLinkActive="active">Settings</a>
+            </li>
+            <li>
+              <a routerLink="/address" routerLinkActive="active">Address</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+</div>
